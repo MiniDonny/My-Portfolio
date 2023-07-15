@@ -1,0 +1,160 @@
+/*FONT FAMILY*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/*GLOBAL*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+/*COLORS*/
+:root{
+    --color_1:#F2F2F2;
+    --color_2:#D9CEAD;
+    --color_3:#8C774F;
+    --color_4:#BFA87E;
+    --color_5:#8C7961;
+}
+/*HEADER*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*MENU*/
+.container_header{
+    width: 100%;
+    height: 50px;
+    background: var(--color_4);
+    padding: 0px 20px;
+}
+.menu{
+   height: 100%;
+}
+nav{
+    height: 100%;
+}
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+nav > ul > li{
+    height: 100%;
+    position: relative;
+}
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    transition: all 300ms ease;
+}
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: var(--color_2);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+/*SUBMENU*/
+nav ul li ul{
+    width: 200px;
+    background: var(--color_5);
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70;
+}
+nav ul li ul li a{
+    display: block;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    transition: all 300ms ease;
+}
+nav ul li ul li a:hover{
+    background: var(--color_3);
+    transform: scale(1.1);
+    padding-left: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+nav ul li ul::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid var(--color_3);
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+/*BURGER MENU*/
+.icon_burger{
+    font-size: 26px;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+#check_menu{
+    display: none;
+}
+#label_check{
+    width: 26px;
+    height: 100%;    
+    display: none;
+}
+@media (max-width: 720px) {  
+    nav > ul{
+        flex-direction: column;
+        background-color: var(--color_4);
+        position: fixed;
+        left: 0;
+        top: 58px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+    nav ul li ul{
+        left: 90px;
+    }
+    nav > ul > li:hover > ul{
+        top: 75px;
+    }
+    #label_check{
+        display: block;
+    }
+    .icon_burger{
+        display: flex;
+    }
+    #check_menu:checked ~ nav > ul {
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
