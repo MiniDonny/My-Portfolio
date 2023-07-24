@@ -1,17 +1,37 @@
-/*ARTICULOS*/
-/*main{
-    background: #f0f0f0;
-    padding: 40px 20px;
-    margin-top: 194px;
+/*FONT FAMILY*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+/*GLOBAL*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;;
 }
-article{
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 40px;
-    background: #fff;
+body{
+    background: var(--color_1);
 }
-article p {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 300px;
-}*/
+ul, ol{
+    list-style: none;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+/*COLORS*/
+:root{
+    --color_1:#F2E7DC;
+    --color_2:#F2E2CE;
+    --color_3:#D9BEA7;
+    --color_4:#F2C094;
+    --color_5:#595048;
+}
+/*MAIN*/
+.selfpresentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    background: var(--color_5);
+    border-radius: 200px;
+}
