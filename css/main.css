@@ -4,9 +4,9 @@
 /*GLOBAL*/
 *{
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;;
 }
 body{
     background: var(--color_1);
@@ -25,13 +25,44 @@ a{
     --color_3:#D9BEA7;
     --color_4:#F2C094;
     --color_5:#595048;
+    --color_6:#030504;
 }
 /*MAIN*/
-.selfpresentation{
+/*HOME*/
+.home{
+    align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 16px;
     justify-content: center;
     padding: 24px;
-    background: var(--color_5);
+    width: 100%;
+}
+.myselfpresentation{
+    color: var(--color_5);
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: center;
+    padding: 16px;
+    text-align: center;
+    width: 350px;
+}
+.myname{
+    color: var(--color_6);
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-family: 'Cedarville Cursive', cursive;
+    text-align: center;
+    transition: .5s, .10s ;
+}
+.myname:hover{
     border-radius: 200px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+    transform: scale3d(1,1,0.2);
+}
+.myserlfimg img{
+    border-radius: 250px;
+    width: 360px;
 }

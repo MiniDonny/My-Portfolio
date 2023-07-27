@@ -1,4 +1,4 @@
-const header = () => document.querySelector("header").innerHTML += `
+/*const header = () => document.querySelector("header").innerHTML += `
 <div class="container_header_up">
     <h1>Donato Robledo</h1>
     <img class="logo" src="./imagenes/Logo.jpg" alt="">
@@ -12,7 +12,6 @@ const header = () => document.querySelector("header").innerHTML += `
         <nav>
             <ul>
                 <li><a href="home">HOME</a></li>
-                <li><a href="#">ABOUT ME</a></li>
                 <li><a href="#">KNOWLEDGE</a></li>
                 <li><a href="#">PROJECTS</a>
                     <ul class="submenu">
@@ -32,3 +31,9 @@ const header = () => document.querySelector("header").innerHTML += `
     </div>
 `
 header()
+
+window.addEventListener("scroll", function(){
+    var header = this.document.querySelector("header");
+    header.classList.toggle("abajo",window.scrollY>0); 
+})*/
+
