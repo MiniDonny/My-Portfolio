@@ -26,8 +26,12 @@ a{
     --color_4:#F2C094;
     --color_5:#595048;
     --color_6:#030504;
+    --color_7:#A6896F;
 }
 /*MAIN*/
+main{
+    z-index: 9999999;
+}
 /*HOME*/
 .home{
     align-items: center;
@@ -101,16 +105,62 @@ a{
 }
 .knowledge > div > article:hover{
     border-radius: 10px;
-    background: var(--color_1);
+    background-image: url(/imagenes/background-cards-knowledge.jpg);
     color: var(--color_6);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     transform: scale(1.1);
 }
 /*PROJECTS*/
-
+.projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 64px;
+}
+.projects > div > article > img{
+    width: 200px;
+}
+.projects > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+    gap: 80px;
+    justify-content: space-evenly;
+}
+.container_articles > article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 200px;
+    transition: all 320ms ease;
+}
+.container_articles > article:hover{
+    background-image: url(/imagenes/background-cards-projects.jpg);
+    border-radius: 30px;
+    transform: scale(1.1);
+}
+.projects > div > article > p{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
 /*MEDIA QUERY*/
 @media (max-width: 720px) {  
     .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .knowledge{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects{
         display: flex;
         flex-direction: column;
     }

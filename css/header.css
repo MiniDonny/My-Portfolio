@@ -29,7 +29,6 @@ a{
 /*HEADER*/
 header{
     left: 0;
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -55,7 +54,7 @@ header{
 .container_header{
     background: var(--color_2);
     height: 64px;
-    padding: 0px 24px;
+    padding: 0px 16px;
     width: 100%;
 }
 .menu{
@@ -146,9 +145,8 @@ nav ul li ul::before{
     width: 26px;
 }
 /*SCROLL*/
-header.abajo{
-    background: var(--color_5);
-    font-style: var(--color_1);
+header.abajo > .container_header_up{
+    display: none;
 }
 /*MEDIA QUERY*/
 @media (max-width: 720px) {  
@@ -195,7 +193,13 @@ header.abajo{
         visibility: visible;
     }
 }
-@media (max-width: 640px) {  
+@media (max-width: 640px) { 
+    .header.abajo > .container_header_up{
+        display: none;
+    } 
+    .header.abajo > .container_header{
+        background: none;
+    }
     .logo{
         border-radius: 64px;
         width: 96px;
@@ -206,8 +210,11 @@ header.abajo{
     .container_header_up h1{
         font-size: 36px;
     }
+    .container_header{
+        position: fixed;
+    }
     nav > ul{
-        background-color: var(--color_4);
+        background-color: var(--color_3);
         flex-direction: column;
         left: 0;
         height: 0px;

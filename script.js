@@ -1,7 +1,7 @@
-/*const header = () => document.querySelector("header").innerHTML += `
+const header = () => document.querySelector("header").innerHTML += `
  <div class="container_header_up">
                 <h1>Donato Robledo</h1>
-                <img class="logo" src="./imagenes/logo.png" alt="">
+                <img class="logo" src="./imagenes/logo.jpg" alt="logo">
                 </div>
                 <div class="container_header">
                 <div class="menu">
@@ -13,18 +13,14 @@
                         <ul>
                             <li><a href="#home">HOME</a></li>
                             <li><a href="#knowledge">KNOWLEDGE</a></li>
-                            <li><a href="#">PROJECTS</a>
+                            <li><a href="#projects">PROJECTS</a>
                                 <ul class="submenu">
-                                    <li><a href="#">MiniDonny</a></li>
-                                    <li><a href="#">My-Portfolio</a></li>
-                                    <li><a href="#">Little-Button</a></li>
-                                    <li><a href="#">Data-Base</a></li>
-                                    <li><a href="#">Input-JS</a></li>
-                                    <li><a href="#">Animations</a></li>
-                                    <li><a href="#">Header-And-Footer</a></li>
-                                    <li><a href="#">Git-With-Github</a></li>
-                                    <li><a href="#">Cirriculum-Vitae-Venom</a></li>
-                                    <li><a href="#">Shop-Skateboards</a></li>
+                                    <li><a href="#minidonny">MiniDonny</a></li>
+                                    <li><a href="#my-portfolio">My-Portfolio</a></li>
+                                    <li><a href="#data-base">Data-Base</a></li>
+                                    <li><a href="#git-with-github">Git-With-Github</a></li>
+                                    <li><a href="#curriculum-vitae-venom">Cirriculum-Vitae-Venom</a></li>
+                                    <li><a href="#shop-skateboards">Shop-Skateboards</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -36,5 +32,4 @@ header()
 window.addEventListener("scroll", function(){
     var header = this.document.querySelector("header");
     header.classList.toggle("abajo",window.scrollY>0); 
-})*/
-
+})
