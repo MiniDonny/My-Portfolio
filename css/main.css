@@ -29,9 +29,7 @@ a{
     --color_7:#A6896F;
 }
 /*MAIN*/
-main{
-    z-index: 9999999;
-}
+
 /*HOME*/
 .home{
     align-items: center;

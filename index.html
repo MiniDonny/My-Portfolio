@@ -10,10 +10,12 @@
         <!--LINKS-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--END LINKS-->
+        <!--LINKS CSS STYLES-->
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/footer.css">
-        <!--END LINKS-->
+        <!--END LINKS CSS STYLES-->
         <!--TITLE-->
         <title>My Portfolio</title>
         <!--END TITLE-->
@@ -22,7 +24,36 @@
     <!--BODY-->
     <body>
         <!--HEADER-->
-        <header></header>
+        <header>
+            <div class="container_header_up">
+                <h1>Donato Robledo</h1>
+                <img class="logo" src="./imagenes/logo.jpg" alt="logo">
+                </div>
+                <div class="container_header">
+                <div class="menu">
+                    <input type="checkbox" id="check_menu">
+                    <label id="label_check" for="check_menu">
+                        <i class="fa-solid fa-bars icon_burger"></i>
+                    </label>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#knowledge">KNOWLEDGE</a></li>
+                            <li><a href="#projects">PROJECTS</a>
+                                <ul class="submenu">
+                                    <li><a href="#minidonny">MiniDonny</a></li>
+                                    <li><a href="#my-portfolio">My-Portfolio</a></li>
+                                    <li><a href="#data-base">Data-Base</a></li>
+                                    <li><a href="#git-with-github">Git-With-Github</a></li>
+                                    <li><a href="#curriculum-vitae-venom">Cirriculum-Vitae-Venom</a></li>
+                                    <li><a href="#shop-skateboards">Shop-Skateboards</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <nav>
+                </div>
+                </div>
+        </header>
         <!--END HEADER-->
         <!--MAIN-->
         <main>
@@ -101,6 +132,10 @@
         <footer>
            <nav>
             <ul class="container_nav_footer">
+               <!-- <input type="checkbox" id="check_contacts">
+           <label id="label_check" for="check_contacts">
+            <i class="fa-solid fa-phone icon_contacts"></i>
+           </label>-->
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/donato-robledo-b20aa2280/"><i class="fab fa-linkedin-in footer-icon" aria-hidden="true"></i></a></li>
