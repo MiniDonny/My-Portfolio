@@ -164,7 +164,6 @@ header.abajo > .container_header_up{
         height: 0px;
         opacity: 0;
         padding: 0px 16px;
-        position: fixed;
         transition: all 320ms ease;
         top: 240px;
         visibility: hidden;

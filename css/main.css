@@ -105,7 +105,7 @@ main{
 }
 .knowledge > div > article:hover{
     border-radius: 10px;
-    background-image: url(/imagenes/background-cards-knowledge.jpg);
+    background: var(--color_1);
     color: var(--color_6);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     transform: scale(1.1);
@@ -142,13 +142,17 @@ main{
     transition: all 320ms ease;
 }
 .container_articles > article:hover{
-    background-image: url(/imagenes/background-cards-projects.jpg);
+    background: var(--color_4);
     border-radius: 30px;
     transform: scale(1.1);
 }
 .projects > div > article > p{
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
+}
+.projects > div > article > p:hover{
+    color: var(--color_1);
+    text-decoration: underline;
 }
 /*MEDIA QUERY*/
 @media (max-width: 720px) {  
