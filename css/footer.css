@@ -36,7 +36,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px;
+    padding: 26px;
     gap: 64px;
 }
 .creator{
@@ -46,71 +46,4 @@ footer{
     background: var(--color_6);
     color: var(--color_1);
     font-family: 'Raleway', sans-serif;
-}
-/*BURGER MENU CONTACTS*/
-/*.icon_contacts{
-    align-items: center;
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-    height: 100%;
-    width: 24px;
-}
-#check_contacts{
-    display: none;
-}
-#label_contacts{
-    display: none;
-    height: 100%;    
-    width: 26px;
-}*/
-
-/*MEDIA QUERY*/
-@media (max-width: 720px) {
-    footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .creator{
-        width: 100%;
-    }
-    .container_nav_footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap ;
-        
-    }
-
-    /* #label_contacts{
-        display: block;
-    }
-     .icon_contacts{
-        display: flex;
-        padding: 32px 0px;
-    }
-    #check_contacs:checked ~ nav > ul {
-        height: 150px;
-        opacity: 1;
-        visibility: visible;
-    }
-    .container_nav_footer > #check_contacs {
-        opacity: 1;
-        visibility: visible;
-    }
-    nav > ul > li > a:hover{
-        transform: scale(1);
-    }
-    nav ul li ul{
-        left: 72px;
-    }
-    nav > ul > li:hover > ul{
-        top: 72px;
-    }
-    #label_check{
-        display: block;
-    }*/
 }
